@@ -1,0 +1,69 @@
+import java.util.Random;
+import java.util.Scanner;
+class aa
+{
+public static void main(String args[])
+{
+String[] s=new String[20];
+String n;
+String nn="yes";
+Scanner in = new Scanner(System.in);
+Random r = new Random();
+s[0]="independent";
+s[1]="democracy";
+s[2]="suprise";
+s[3]="garbage";
+s[4]="father";
+s[5]="bucket";
+s[6]="infant";
+s[7]="stone";
+s[8]="clever";
+s[9]="mother";
+s[10]="house";
+s[11]="accident";
+s[12]="funny";
+s[13]="women";
+s[14]="difficult";
+s[15]="strange";
+s[16]="large";
+s[17]="present";
+s[18]="answer";
+s[19]="angry";
+do{
+int rand=r.nextInt(19);
+String k=s[rand];
+int rr=r.nextInt(6);
+int j=r.nextInt(6);
+System.out.println("welcom to hangman game you have 5 chances to guess !");
+for(int i=0;i<k.length();i++)
+{
+if(i==rr || i==j)
+System.out.print(" "+k.charAt(i)+" ");
+else
+System.out.print(" _ ");
+}
+int flag=0;
+int ch=5;
+while(ch>0)
+{
+System.out.println();
+System.out.println(" you have "+ch+" chances ! \n"+" enter :");
+String h = in.nextLine();
+if(h.equals(k))
+{
+System.out.println("you win");
+flag=1;
+break;
+}
+else
+ch=ch-1;
+}//
+if(flag==0)
+System.out.println("you lost! word is "+k);
+System.out.println("try again ?(yes/no)");
+n=in.nextLine();
+}while(nn.equals(n));
+
+//System.out.println("fail "+k+" "+h);
+}
+}

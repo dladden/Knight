@@ -1,0 +1,49 @@
+import java.util.*;
+public class TwoDArrays {
+
+	public static void main(String[] args) {
+	
+		Random r = new Random();
+		
+		//2D Array with an Intitalizer list
+		int array [][] = {
+			
+				{4, 3, 5},
+				{3, 5, 8},
+				{7, 4, 3}
+		};
+		
+		
+		
+		int array2[][] = new int[10][10]; // creates a 10 X 10 2d Array
+		print2DArray(array2);
+		fill2DArray(array2);
+	}//end main
+	
+		/**
+		 * the a[0].length is the starting point of the first array the next line of the array would be the a[1].length;
+		 * @param a
+		 */
+		public static void print2DArray(int a[][]) {
+			
+			for(int i=0; i < a[0].length; i++) {
+				for(int j=0; j< a.length; j++) {
+					System.out.print(a[i][j]+" ");
+				}
+				System.out.println();
+			}
+			
+		}//end print2DArray
+		
+		public static void fill2DArray(int a[][]) {
+			
+			Random r = new Random();
+			
+			for(int i = 0; i< a.length; i++) {
+				for(int j = 0; j< a[0].length; j++) {
+					a[i][j] = r.nextInt(100)+1;//generates a number between 1 and 100;
+				}
+				System.out.println(x);
+			}
+		}
+}// end class

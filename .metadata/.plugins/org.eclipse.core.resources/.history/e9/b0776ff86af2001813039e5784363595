@@ -1,0 +1,23 @@
+import java.util.*;
+public class TwoDArrays {
+
+	public static void main(String[] args) {
+	
+		Random r = new Random();
+		
+		//2D Array with an Intitalizer list
+		int array [][] = {
+			
+				{4, 3, 5},
+				{3, 5, 8},
+				{7, 4, 3}
+		};
+		
+		public static void print2DArray(int a[] []) {
+			
+			
+			
+		}//end print2DArray
+	
+}//end main
+}// end class

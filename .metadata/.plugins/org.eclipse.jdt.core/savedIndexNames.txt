@@ -1,0 +1,11 @@
+INDEX VERSION 1.130+/Users/Denys/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+2381509250.index
+1763973403.index
+3878158382.index
+3079081709.index
+1237770135.index
+27990924.index
+3945724752.index
+1329438453.index
+136468334.index
+1788026837.index
